@@ -356,10 +356,6 @@ class Sticky extends PureComponent {
         }
     }
 
-    shouldComponentUpdate (nextProps, nextState) {
-        return !this.props.shouldFreeze();
-    }
-
     render () {
         // TODO, "overflow: auto" prevents collapse, need a good way to get children height
         var innerStyle = {
